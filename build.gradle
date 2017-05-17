@@ -41,7 +41,6 @@ repositories {
     flatDir {
         'libs'
     }
-    mavenCentral()
 }
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
