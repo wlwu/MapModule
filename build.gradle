@@ -6,7 +6,7 @@ android {
         sign {
             keyAlias 'Universal'
             keyPassword 'Universal'
-            storeFile file('../Universal.keystore')
+            storeFile file('Universal.keystore')
             storePassword 'Universal'
         }
     }
