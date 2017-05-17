@@ -14,5 +14,6 @@ public class MapApplication extends BaseApplication {
     public void onCreate() {
         super.onCreate();
         SDKInitializer.initialize(this);
+        System.out.println("--wuwenliang MapApplication sdkInitializer");
     }
 }
