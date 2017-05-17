@@ -46,3 +46,9 @@ dependencies {
     compile files('libs/BaiduLBS_Android.jar')
     compile 'com.github.wlwu:BaseModule:v1.0.4'
 }
+allprojects {
+    repositories {
+        jcenter()
+        maven { url "https://jitpack.io" }
+    }
+}
