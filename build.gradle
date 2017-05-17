@@ -47,7 +47,6 @@ dependencies {
     compile 'com.android.support:appcompat-v7:25.3.1'
     compile files('libs/BaiduLBS_Android.jar')
     compile 'com.github.wlwu:BaseModule:v1.0.4'
-    compile "org.jetbrains.kotlin:kotlin-stdlib-jre7:1.1.2-3"
 }
 buildscript {
     ext.kotlin_version = '1.1.2-3'
