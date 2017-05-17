@@ -2,6 +2,15 @@ apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 android {
+    signingConfigs {
+        sign {
+            keyAlias 'Universal'
+            keyPassword 'Universal'
+            storeFile file('../Universal.keystore')
+            storePassword 'Universal'
+        }
+    }
+
     compileSdkVersion 25
     buildToolsVersion "25.0.2"
 
@@ -22,11 +31,13 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
             manifestPlaceholders = [Baidu_Map_Key    : "4cnCpWBb0hEqwYOgKIY80jPkhG4PDwf4"]
+            signingConfig signingConfigs.sign
         }
         debug{
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
             manifestPlaceholders = [Baidu_Map_Key    : "4cnCpWBb0hEqwYOgKIY80jPkhG4PDwf4"]
+            signingConfig signingConfigs.sign
         }
     }
     lintOptions {
